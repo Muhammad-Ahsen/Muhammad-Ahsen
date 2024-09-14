@@ -8,32 +8,28 @@ body {
   .container {
     max-width: 800px;
     margin: 20px auto;
-    background-color: #ffffff;
+    background-color: #fff;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-
-  header {
-    text-align: center;
-  }
-
-  .profile-pic {
-    width: 150px;
-    border-radius: 50%;
   }
 
   h1, h2 {
     color: #333;
   }
 
-  ul {
-    list-style-type: none;
-    padding: 0;
+  label {
+    display: block;
+    margin: 10px 0 5px;
+  }
+
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
   }
 
   button {
-    display: block;
-    margin: 20px auto;
     padding: 10px 20px;
     background-color: #007BFF;
     color: #fff;
@@ -44,3 +40,15 @@ body {
   button:hover {
     background-color: #0056b3;
   }
+
+  .profile-pic {
+    width: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 10px 0;
+  }
+
+
+
+
+  

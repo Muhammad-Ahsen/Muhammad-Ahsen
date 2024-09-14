@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Resume Builder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Dynamic Resume Builder</h1>
+
+    <!-- Form for input -->
+    <form id="resumeForm">
+      <h2>Personal Information</h2>
+      <label for="name">Name:</label>
+      <input type="text" id="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" required>
+
+      <label for="profilePic">Profile Picture URL:</label>
+      <input type="url" id="profilePic">
+
+      <h2>Education</h2>
+      <label for="education">Education:</label>
+      <textarea id="education" placeholder="e.g., B.Sc. in Computer Science"></textarea>
+
+      <h2>Skills</h2>
+      <label for="skills">Skills (comma-separated):</label>
+      <input type="text" id="skills" placeholder="e.g., JavaScript, React, CSS">
+
+      <h2>Work Experience</h2>
+      <label for="workExperience">Work Experience:</label>
+      <textarea id="workExperience" placeholder="e.g., Frontend Developer at XYZ"></textarea>
+
+      <button type="submit">Generate Resume</button>
+    </form>
+
+    <!-- Dynamically generated resume will be displayed here -->
+    <div id="resumeDisplay" style="display: none;">
+      <h1 id="displayName"></h1>
+      <p id="displayEmail"></p>
+      <img id="displayProfilePic" src="" alt="Profile Picture" class="profile-pic" style="display: none;">
+
+      <h2>Education</h2>
+      <p id="displayEducation"></p>
+
+      <h2>Skills</h2>
+      <ul id="displaySkills"></ul>
+
+      <h2>Work Experience</h2>
+      <p id="displayWorkExperience"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
